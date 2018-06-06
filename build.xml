@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="RestartMemcache" default="main" basedir=".">
+
+<target name="run">
+	<exec executable="/bin/bash">
+	  <arg value="${basedir}/scripts/input.sh"/>
+	 </exec>
+</target>
+	
+<target name="main" depends="run"/>
+
+</project>
