@@ -3,7 +3,7 @@
 
 <target name="run">
 	<exec executable="/bin/bash">
-	  <arg value="${basedir}/scripts/input.sh"/>
+	  <arg value="${basedir}/scripts/input.pl"/>
 	 </exec>
 </target>
 	
