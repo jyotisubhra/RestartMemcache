@@ -5,6 +5,10 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>RestartMemcache</name>
+<properties>
+	<bash.executable>C:\cygwin64\bin</bash.executable>
+</properties>
+
 <build>
 <plugins>
 <plugin>
@@ -17,7 +21,7 @@
             <phase>generate-sources</phase>
             <configuration>
                 <tasks>
-                    <exec executable="/bin/bash">
+                    <exec executable="${bash.executable}/bash">
                         <arg value="${basedir}/scripts/input.pl" />
                     </exec>
                 </tasks>
